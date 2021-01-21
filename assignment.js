@@ -10,8 +10,21 @@ function kilometerToMeter(kilometer) {
 	}
 }
 console.log(kilometerToMeter(5.21));
+// ! Kilometer To Meter Converter Problem Is Done
 
-function budgetCalculator() {}
+// Take input Quatity of Product and Multiply with price and return value
+function budgetCalculator(watch, mobile, laptop) {
+	// ! if any single product empty it will return warning
+	if (watch > 0 && mobile > 0 && laptop > 0) {
+		var totalCost = watch * 50 + mobile * 100 + laptop * 500;
+		return totalCost;
+	} else {
+		return 'Please Enter Valid Quatity';
+	}
+}
+console.log('Total budget: ', budgetCalculator(10, 6, 10));
+
+// ! Budget Calculator is Done
 
 // know your hotel rent using by hotelCost Function
 function hotelCost(days) {
@@ -43,7 +56,8 @@ function hotelCost(days) {
 	}
 	return totalRent;
 }
-console.log('Your Rent is:', hotelCost(101));
+console.log('Your Rent is:', hotelCost(17));
+// ! Hotel Rent Problem is Done
 
 //!  find largest word from array by using MegaFrind function
 function megaFriend(firends) {
@@ -70,5 +84,7 @@ var firend = [
 	'chagoll',
 	'rupdssf',
 	'lkdfjilove you chagol',
+	'lkdfjilove you chagol',
 ];
 console.log(megaFriend(firend));
+// ! Mega Friends Problem Is Done
